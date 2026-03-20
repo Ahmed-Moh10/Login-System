@@ -1,0 +1,188 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #24353f;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #17a2b8;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.group {
+    background-color: transparent;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+}
+
+.auth-section,
+.welcome-section {
+    min-height: 100vh;
+}
+
+.welcome-page .welcome-section {
+    min-height: calc(100vh - 90px);
+}
+
+.auth-box,
+.welcome-box {
+    width: 100%;
+    max-width: 700px;
+}
+
+.form-control {
+    background-color: transparent !important;
+    color: #fff !important;
+    border: 1px solid #ced4da;
+    padding: 0.9rem 1rem;
+}
+
+.form-control:focus {
+    background-color: transparent !important;
+    color: #fff !important;
+    box-shadow: none;
+    border-color: #17a2b8;
+}
+
+input::placeholder {
+    color: rgb(182, 182, 182) !important;
+}
+
+p a {
+    transition: 0.3s;
+}
+
+p a:hover {
+    color: #17a2b8 !important;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+}
+
+#logoutBtn {
+    white-space: nowrap;
+}
+
+#invalid,
+#exist {
+    color: #dc3545;
+    font-size: 0.95rem;
+}
+
+#user-name {
+    word-break: break-word;
+}
+
+/* Large screens */
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .auth-box,
+    .welcome-box {
+        max-width: 600px;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .auth-section,
+    .welcome-section {
+        padding-inline: 12px;
+    }
+
+    .auth-box,
+    .welcome-box {
+        max-width: 100%;
+        padding: 2rem !important;
+    }
+
+    .navbar .container {
+        gap: 12px;
+    }
+
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .auth-box,
+    .welcome-box {
+        padding: 1.5rem 1rem !important;
+        border-radius: 8px;
+    }
+
+    .form-control {
+        padding: 0.8rem 0.9rem;
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .navbar {
+        padding-block: 1rem !important;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    #logoutBtn {
+        padding: 0.4rem 1rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* Very small screens */
+@media screen and (max-width: 350px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .auth-box,
+    .welcome-box {
+        padding: 1.2rem 0.8rem !important;
+    }
+
+    .form-control,
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
